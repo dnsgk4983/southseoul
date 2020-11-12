@@ -98,7 +98,8 @@ header.active{
 .sub-back{
     width: 100%;
     height: 210px;
-    background: #FFFEF9;
+    background: rgba(255, 254, 249, .9);
+    z-index: 9;
     position: absolute;
     top: 92px;
     left: 0;
@@ -320,6 +321,373 @@ header.active{
     color: #fff;
     font-size: 1.5em;
 }
+
+
+
+
+
+
+
+/* 추가영역 */
+.board-wrap{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: #DBDBDB;
+    padding: 10em 0;
+}
+.board-title{
+    width: 1280px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.board-title-left{
+    display: flex;
+    padding-top: 4em;
+}
+.board-title-1{
+    font-size: 40px;
+    font-family:'SCDrem7';
+    color: #1D4793;
+}
+.board-title-2{
+    font-size: 20px;
+    font-family:'SCDream4';
+    color: #1D4793;
+    padding-top: 20px;
+    padding-left: 2px;
+}
+.board-title-right{
+    width: 410px;
+}
+.board-title-right img{
+    width: 100%;
+}
+/* 게시판 컨텐츠 영역 */
+.board-content{
+    width: 1280px;
+    height: 1200px;
+    background: #fff;
+    margin: 0 auto;
+}
+.board-input{
+    width: 1200px;
+    height: 62px;
+    padding-top: 66px;
+    padding-left: 40px;
+    padding-right: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.board-input-left{
+    display: flex;
+}
+.board-input-left-1{
+    font-size: 24px;
+    font-family:'SCDream4';
+    color: #898989;
+}
+.board-input-left-1 > .count{
+    font-size: 24px;
+    font-family:'SCDrem7';
+    color: #000;
+    padding-left: 2px;
+}
+.board-input-right{
+    display:flex;
+}
+.search{
+    height: 62px;
+    border: 3px solid #000;
+    box-sizing: border-box;
+    border-radius: 2em;
+    padding: 15px 30px;
+}
+.search-option{
+    width: 277px;
+    padding: 12px 30px;
+    outline: none;
+    color: #898989;
+    font-size: 24px;
+    font-family:'SCDrem7';
+
+    background: url(../images/check.png);
+    background-position: 220px center;
+    background-repeat: no-repeat;
+    appearance: none;
+}
+.search-input{
+    width: 482px;
+    margin-left: 11px;
+    outline: none;
+}
+.search-btn-wrap{
+    width: 175px;
+    height: 62px;
+    border-radius: 2em;
+    margin-left: 10px;
+    background: #7C7C7C;
+    cursor: pointer;
+}
+.search-btn{
+    padding: 18px 45px;
+    display: flex;
+}
+.search-btn>img{
+    width: 21px;
+    height: 22px;
+}
+.search-btn>a{
+    font-size: 24px;
+    color: #fff;
+    font-family:'SCDrem7';
+    padding-left: 10px;
+}
+
+/* 게시판 페이지 넘버 */
+.board-number a{
+    text-decoration: none;
+    font-size: 16px;
+    color: #262626;
+    font-family:'SCDream4';
+}
+.board-number{
+    /* width: 100%; */
+    padding:30px 40px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.board-number .page-number{
+    width: 580px;
+}
+.board-number .page-number>ul{
+    display: flex;
+    align-items: center;
+}
+.board-number .page-number>ul>li{
+    width: 40px;
+    height: 40px;
+    border: 1px solid #B2B2B2;
+    box-sizing: border-box;
+    list-style: none;
+    text-align: center;
+    padding: 10px 10px;
+    margin: 0 3px;
+}
+.board-number .page-number>ul>li.active{
+    background: #000;
+}
+.board-number .page-number>ul>li.active>a{
+    color: #fff;
+}
+.board-number .page-number>ul>li:first-child{
+    margin-right: 20px;
+}
+.board-number .page-number>ul>li:last-child{
+    margin-left: 20px;
+}
+.board-number .write-btn{
+    width: 200px;
+    height: 62px;
+    background: #3277C9;
+    border-radius: 2em;
+    text-align: center;
+    line-height: 62px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.board-number .write-btn a{
+    font-size: 24px;
+    font-family:'SCDrem7';
+    color: #fff;
+}
+.write-btn-wrap{
+    width: 200px;
+    height: 62px;
+    border-radius: 2em;
+    background: #7C7C7C;
+    cursor: pointer;
+}
+.write-btn{
+    /* padding: 18px 45px;   */
+    display: flex;
+}
+.write-btn>img{
+    width: 21px;
+    height: 21px;
+}
+.write-btn>a{
+    font-size: 24px;
+    color: #fff;
+    font-family:'SCDrem7';
+    padding-left: 10px;
+}
+.null{
+    width: 150px;
+    height: 10px;
+}
+/* 테이블 */
+.board-table{
+    padding-top: 30px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+.board-table .table-top{
+    width: 100%;
+    display: flex;
+    border-top:  6px solid #000000;
+
+    border-bottom: 4px solid #000000;
+    padding: 19px 0;
+    font-size: 24px;
+    color: #000000;
+    font-family:'SCDrem7';
+}
+.board-table .table-number{
+    width: 8%;
+    text-align: center;
+}
+.board-table .table-condition{
+    width: 8%;
+    text-align: center;
+}
+.board-table .table-title{
+    width: 60%;
+    text-align: center;
+}
+.board-table .table-title-txt{
+    width: 57.8%;
+    text-align: left;
+}
+.board-table .table-who{
+    width: 12%;
+    text-align: center;
+}
+.board-table .table-date{
+    width: 12%;
+    text-align: center;
+}
+
+
+
+.board-table .table-number-content{
+    font-size: 18px;
+    color: #2C2C2C;
+    text-align: center;
+    font-family:'SCDream4';
+    padding: 20px 0;
+}
+
+.board-table .table-condition-content{
+    /* width: 80px; */
+    height: 36px;
+    border-radius: 2em;
+    text-align: center;
+    align-items: center;
+    line-height: 36px;
+
+    font-size: 22px;
+    color: #2C2C2C;
+    font-family:'SCDrem7';
+    margin: 12px 0;
+    line-height: 36px;
+
+}
+.board-table .condition-grey{
+    background:#7C7C7C;
+}
+.board-table .condition-pink{
+    background:#FB4F67;
+}
+.board-table .condition-blue{
+    background:#3A61DF;
+}
+.board-table .table-title-content{
+    font-size: 22px;
+    color: #2C2C2C;
+    font-family:'SCDrem7';
+    padding: 18px 0;
+    margin-left: 26px;
+}
+.board-table .table-who-content{
+    font-size: 20px;
+    color: #2C2C2C;
+    font-family:'SCDrem7';
+    text-align: center;
+    padding: 18px 0;
+}
+.board-table .table-date-content{
+    font-size: 18px;
+    color: #000000;
+    font-family:'SCDream4';
+    text-align: center;
+    padding: 20px 0;
+}
+.accordion  > li >.toggle{
+    display: flex;
+    width: 100%;
+    border-bottom: 1px solid #B4B4B4;
+}
+
+/* 아코디언 내부 */
+.accordion .inner{
+    overflow: hidden;
+    display: none;
+}
+.accordion li{
+   width: 100%;
+}
+.accordion .inner-top{
+    width: 100%;
+    display: flex;
+    padding: 20px 0;
+    border-bottom: 1px solid #B4B4B4;
+}
+.accordion .inner-left{
+    width: 15%;
+    font-size: 20px;
+    font-family:'SCDrem7';
+    text-align: center;
+    line-height: 34px;
+}
+.accordion .inner-txt-blue{
+    color: #3277C9;
+}
+.accordion .inner-txt-pink{
+    color: #FB4F67;
+}
+.accordion .inner-right{
+    width:85%;
+}
+.accordion .inner-right-txt{
+    color: #2C2C2C;
+    font-size: 18px;
+    font-family:'SCDream4';
+    line-height: 34px;
+    padding-bottom: 27px;
+}
+.accordion .inner-dash-color{
+    color: #B2B2B2;
+    padding: 0 28px;
+}
+.accordion .inner-click-txt{
+    color: #2C2C2C;
+    font-size: 14px;
+    font-family:'SCDrem7';
+    line-height: 28px;
+}
+.accordion .inner-bottom{
+    width: 100%;
+    display: flex;
+    padding: 20px 0;
+    border-bottom: 1px solid #B4B4B4;
+}
+
 
 
 

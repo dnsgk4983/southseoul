@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <!-- 헤더 시작 -->
+        <div class="nav">
+            <ul class="main-nav">
+                <li>
+                    <a href="#">구매물품접수</a>
+                    <ul>
+                        <li>
+                            <a href="#">접수</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">착한구매란?</a>
+                    <ul>
+                        <li>
+                            <a href="#">사회적 경제</a>
+                        </li>
+                        <li>
+                            <a href="#">사회적 기업</a>
+                        </li>
+                        <li>
+                            <a href="#">관련 법령</a>
+                        </li>
+                        <li>
+                            <a href="#">기업 현황</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/logo.png" alt="로고">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">착한 커뮤니티</a>
+                    <ul>
+                        <li>
+                            <a href="#">공지사항</a>
+                        </li>
+                        <li>
+                            <a href="#">캠페인</a>
+                        </li>
+                        <li>
+                            <a href="#">Q&A</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">추천상품</a>
+                    <ul>
+                        <li><a href="#">자료실</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="user-area">
+                <a href="#">
+                    <img src="images/ico_user.png" alt="유저아이콘">
+                    <p>유정민 차장님</p>
+                </a>
+            </div>
+            <div class="sub-back"></div>
+        </div>
+        <!-- 헤더 종료 -->
+    </header>
+    <!-- 섹션 -->
+    <section>
+        <div class="board-wrap">
+            <div class="board-title">
+
+                <div class="board-title-left">
+                    <p class="board-title-1">착한구매 접수하기</p>
+                    <p class="board-title-2">착한구매를 보다 손쉽게 할 수 있도록 돕습니다</p>
+                </div>
+
+                <div class="board-title-right">
+                    <img src="images/board_top_img.png" alt="게시판 상단 이미지">
+                </div>
+
+            </div>
+            <!-- 게시판 상단 영역 종료 -->
+
+            <div class="board-content">
+                <div class="board-input">
+                    <div class="board-input-left">
+                        <p class="board-input-left-1">접수<span class="count">124</span></p>
+                    </div>
+
+                    <div class="board-input-right">
+                        <select class="search-option search">
+                            <option value="전체" selected>전체</option>
+                            <option value="옵션1">옵션1</option>
+                            <option value="옵션2">옵션2</option>
+                        </select>
+                        
+                        <input type="text" class="search-input search">
+                        
+                        <div class="search-btn-wrap">
+                            <div class="search-btn">
+                                <img src="images/search-icon.png" alt="게시판 검색 버튼">
+                                <a href="#">검색</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 게시판 검색영역 종료 -->
+
+
+                <div class="board-table">
+                    <div class="table-top">
+                        <div class="table-number">
+                            <p>번호</p>
+                        </div>
+                        <div class="table-condition">
+                            <p>상태</p>
+                        </div>
+                        <div class="table-title">
+                            <p>제목</p>
+                        </div>
+                        <div class="table-who">
+                            <p>작성자</p>
+                        </div>
+                        <div class="table-date">
+                            <p>작성일</p>
+                        </div>
+                    </div>
+
+                    <div class="table-content">
+                        <ul class="accordion">
+                            <li class="">
+                              <div class="toggle" href="javascript:void(0);">
+                                <div class="table-number table-number-content">
+                                    <p>중요</p>
+                                </div>
+                                <div class="table-condition table-condition-content condition-grey">
+                                    <p>완료</p>
+                                </div>
+                                <div class="table-title-txt table-title-content">
+                                    <p>구매요청 하는 법</p>
+                                </div>
+                                <div class="table-who table-who-content">
+                                    <p>김구매</p>
+                                </div>
+                                <div class="table-date table-date-content">
+                                    <p>20.01.09.</p>
+                                </div>
+                              </div>
+
+                              <div class="inner">
+                                <div class="inner-top">
+                                    <div class="inner-left inner-txt-blue">
+                                        <p>접수</p>
+                                    </div>
+                                    <div class="inner-right">
+                                        <p class="inner-right-txt">
+                                            4벌 주문했는데요<br>
+                                            주문제품 착오 없이 보내주세요<br>
+                                            지난번 주문에 잘못 보내주셨는데 한벌이라 그냥 안했어요.<br>
+                                            이번엔 사이즈,디자인 다른 제품 보내지 말아주세요.<br>
+                                        </p>
+                                        <p><a href="#" class="inner-click-txt">검색</a><span class="inner-dash-color">|</span><span><a href="#" class="inner-click-txt">답변</a></span><span class="inner-dash-color">|</span><span><a href="#" class="inner-click-txt">상태 관리</a></span></p>
+                                    </div>
+                                </div>
+
+                                <div class="inner-bottom">
+                                    <div class="inner-left inner-txt-pink">
+                                        <p>답변</p>
+                                    </div>
+                                    <div class="inner-right">
+                                        <p class="inner-right-txt">
+                                            오늘 재주문건 확인되어 구매해주신 제품 저희가 오늘 출고해드리구요! 배송은 1~3일정도 소요되며,<br>
+                                            좋은상품으로 보내드릴게요~ 감사합니다!
+                                        </p>
+                                        <p><a href="#" class="inner-click-txt">수정</a><span class="inner-dash-color">|</span><span><a href="#" class="inner-click-txt">삭제</a></span></p>
+                                    </div>
+                                </div>
+                              </div>
+                            </li>
+
+
+                            
+                            
+                          </ul>
+                    </div>
+                </div>
+
+
+                <!-- 게시판 테이블 영역 종료 -->
+
+                <div class="board-number">
+                    <div class="null"></div>
+                    <div class="page-number">
+                        <ul>
+                            <li><a href="#"></a></li>
+                            <li><a href="#">11</a></li>
+                            <li><a href="#">12</a></li>
+                            <li><a href="#">13</a></li>
+                            <li class="active"><a href="#">14</a></li>
+                            <li><a href="#">15</a></li>
+                            <li><a href="#">16</a></li>
+                            <li><a href="#">17</a></li>
+                            <li><a href="#">18</a></li>
+                            <li><a href="#">19</a></li>
+                            <li><a href="#">20</a></li>
+                            <li><a href="#"></a></li>
+                        </ul>
+                    </div>
+
+                    <div class="write-btn">
+                        <img src="images/write-icon.png" alt="게시판 글쓰기 버튼">
+                        <a href="#">글쓰기</a>
+                    </div>
+                   
+                </div>
+                <!-- 게시판 페이지 영역 종료 -->
+            </div>
+        </div>
+    </section>
+    <!-- 섹션 종료 -->
+    <!-- 푸터 -->
+    <footer>
+        <div class="foot-area">
+            <div class="foot-logo">
+                <a href="#">
+                    <img src="images/footer-logo.png" alt="푸터로고">
+                </a>
+            </div>
+            <div class="copyright">
+                <p>KEPCO 남서울본부 착한구매 플랫폼 copyright© 2021 KEPCO ALL RESERVED</p>
+            </div>
+            <div class="admin-tell">
+                <p>담당자 연락처 0241-332</p>
+            </div>
+        </div>
+    </footer>
+    <!-- 푸터 종료 -->
+</body>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/script.js"></script>
+
+    <script type="text/javascript">
+    $('.toggle').click(function(e) {
+  	e.preventDefault();
+  
+    var $this = $(this);
+  
+    if ($this.next().hasClass('show')) {
+        $this.next().removeClass('show');
+        $this.next().slideUp(350);
+    } else {
+        $this.parent().parent().find('li .inner').removeClass('show');
+        $this.parent().parent().find('li .inner').slideUp(350);
+        $this.next().toggleClass('show');
+        $this.next().slideToggle(350);
+    }
+});
+    </script>
+
+</html>
