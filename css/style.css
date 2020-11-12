@@ -1,0 +1,379 @@
+@font-face{
+    font-family:'SCDream4';
+    font-weight: 400;
+    src:url('../css/fonts/AnyConv.com__SCDream4.eot');
+    src:url('../css/fonts/AnyConv.com__SCDream4.eot?#iefix') format('embedded-opentype'),
+        url('../css/fonts/SCDream4_1.woff') format('woff'),
+        url('../css/fonts/SCDream4_1.ttf') format('truetype');
+}
+
+@font-face{
+    font-family:'SCDrem7';
+    font-weight: 700;
+    src:url('../css/fonts/AnyConv.com__SCDream7.eot');
+    src:url('../css/fonts/AnyConv.com__SCDream7.eot?#iefix') format('embedded-opentype'),
+        url('../css/fonts/SCDream7_1.woff') format('woff'),
+        url('../css/fonts/SCDream7_1.ttf') format('truetype');
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+button{
+    outline: none;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    font-family: 'SCDream4';
+    font-size: 16px;
+}
+/* 헤더 css */
+
+/* nav */
+
+header{
+    position: relative;
+    width: 100%;
+    height: 92px;
+    background: rgba(255,255,255, .8);
+}
+header.active{
+    background: #fff;
+}
+.nav{
+    width: 1240px;
+    height: 92px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.main-nav{
+    width: 937px;
+    overflow: hidden;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.main-nav > li{
+    display: block;
+    width: 178px;
+    text-align: center;
+}
+.main-nav > li:nth-child(3){
+    position: relative;
+    z-index: 999;
+    width: 348px;
+}
+.main-nav > li ul{
+    display: none;
+    position: absolute;
+    z-index: 99;
+    padding: 1em 0;
+    top: 92px;
+}
+
+.main-nav > li ul > li{
+    text-align: center;
+}
+
+.main-nav > li ul li a{
+    display: block;
+    width: 150px;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+}
+
+/* 서브 뒤에 깔리는 배경 */
+.sub-back{
+    width: 100%;
+    height: 210px;
+    background: #FFFEF9;
+    position: absolute;
+    top: 92px;
+    left: 0;
+    display: none;
+    border-top: 2px solid #FEF7C3;
+}
+.sub-back.active{
+    display: block;
+}
+
+.nav a{
+    color: #5299ED;
+}
+
+
+.main-nav a img{
+    width: 100%;
+}
+
+/* 메뉴 호버 효과 */
+.main-nav > li a:hover{
+    font-family: 'SCDrem7';
+}
+.main-nav > li > ul > li > .active{
+    border-radius: 2em;
+    background: #DBDBDB;
+    color: #262626;
+    font-family: 'SCDream4';
+}
+
+
+/* 상단 유저 아이콘 */
+.user-area{
+    position: absolute;
+    right: 3em;
+    top: 2.4em;
+}
+.user-area > a{
+    display: flex;
+    align-items: center; 
+}
+
+
+/* 메인 섹션 시작 */
+.main-wrap{
+    width: 100%;
+    height: 100%;
+    background: #FEF7C3;
+    padding: 3.75em 0;
+}
+.main--content{
+    width: 1360px;
+    display: flex;
+    margin: 0 auto;
+    color: #1D4793;
+}
+
+/* 메인타이틀 */
+.main--title{
+    width: 680px;
+    padding-top: 4.5625em;
+}
+.main-title{
+    font-size: 3.125em;
+    margin-bottom: .25em;
+}
+.main-title b{
+    font-family: 'SCDrem7';
+}
+
+.main-title-sub{
+    font-size: 2em;
+    line-height: 1.25em;
+    margin-bottom: 1.8125em;
+}
+/* 메인타이틀 버튼 */
+.main--title a{
+    color: #fff;
+    background: #FF6C80;
+    padding: 1em 2em;
+    border-radius: 2em;
+}
+/* 메인 하단 카드영역 */
+.main--cards{
+    width: 1240px;
+    height: 400px;
+    background: #fffde6;
+    margin: 1.5em auto 0;
+    border-radius: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.card{
+    width: 290px;
+    height: 360px;
+    border-radius: 1em;
+}
+/* card-1 */
+.card-1{
+    background: linear-gradient( to bottom, #5299ED, #FF95A4 );
+    text-align: center;
+    padding: 1em 0;
+    height: 328px;
+}
+.card-1 h2{
+    margin-top: .5em;
+    color: #FFFAA2;
+    font-size: 1.75em;
+    line-height: 1.25em;
+}
+.card-1 p{
+    color: #fff;
+    margin-top: 1em;
+}
+
+/* card-3 */
+.card-title{
+    height: 56px;
+    line-height: 56px;
+    background: #5299ED;
+    border-radius: 1em 1em 0 0;
+    font-size: 1.75em;
+    color: #fff;
+    font-family: "SCDrem7";
+    padding-left: 1em;
+}
+.card-3 ul{
+    margin-top: 1.75em;
+    padding: 0 1em;
+}
+.card-3 ul > li {
+    height: 3em;
+}
+.card-3 ul > li::before {
+    content: "\2022";
+    color: red;
+    font-weight: bold;
+    width: 1em;
+    margin-left: -1em;
+}
+.card-3 ul > li > a{
+    color: #262626;
+    font-size: 1.25em;
+}
+.card-3 ul span{
+    float: right;
+    color: #7C7C7C;
+}
+
+/* card4 */
+.card-4 .card-title{
+    background: #FF6C80;
+}
+.card-4 img{
+    width: 290px;
+    margin-top: 1em;
+}
+
+/* 팝업 창 */
+.main-popup{
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .7);
+    position: fixed;
+    top: 0;
+    z-index: 9999;
+    display: none;
+}
+
+.pop-contents{
+    width: 640px;
+    height: 700px;
+    background: #FFFFFF;
+    border: 1px solid #707070;
+    margin: 0 auto;
+    margin-top: 5.5em;
+    position: relative;
+    text-align: center;
+}
+.pop-close{
+    position: absolute;
+    top: -4em;
+    right: 1em;
+}
+
+.pop-left-arrow{
+    position: absolute;
+    left: -8em;
+}
+.pop-right-arrow{
+    position: absolute;
+    right: -8em;
+}
+
+.pop-main{
+    margin-top: 20em;
+}
+.pop-main p{
+    font-size: 2em;
+    color: #262626;
+}
+
+.pop-btn{
+    position: absolute;
+    bottom: -6em;
+    left: 0;
+    right: 0;
+}
+.pop-btn a{
+    display: block;
+    width: 260px;
+    margin: 0 auto;
+    padding: .83333em 0;
+    background: #FF6C80;
+    border-radius: 2em;
+    color: #fff;
+    font-size: 1.5em;
+}
+
+
+
+/* 푸터 */
+footer{
+    width: 100%;
+    height: 60px;
+    background: #fff;
+}
+.foot-area{
+    width: 1240px;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+}
+.foot-area p{
+    font-size: .875em;
+    color: #AAAAAA;
+}
+
+/* fixed icon */
+
+.go-to-cart{
+    width: 120px;
+    height: 120px;
+    border-radius: 100%;
+    background: #5299ED;
+    position: fixed;
+    color: #fff;
+    text-align: center;
+    bottom: 10em;
+    right: 10em;
+}
+.go-to-cart img{
+    margin-top: 1.25em;
+    margin-bottom: .5em;
+}
+.go-to-cart p{
+    line-height: 1em;
+}
+
+.go-top{
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    color: #fff;
+    position: fixed;
+    bottom: 6em;
+    right: 12em;
+    background: #FB4F67;
+    border-radius: 100%;
+}
+.go-top img{
+    margin-top: .75em;
+}
