@@ -2,10 +2,14 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>남서울 착한구매</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/reset.css">
+
+    <!-- slick css -->
+    <link rel="stylesheet" href="css/slick-theme.css">
+    <link rel="stylesheet" href="css/slick.css">
+
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -96,7 +100,20 @@
                     <p>착한구매물품 접수하기<img src="images/arrow.png" alt="화살표아이콘"></p>
                 </a>
                 <a href="#" class="card card-2">
-                    <img src="images/main-card.png" alt="메인 하단 배너">
+                    <div class="card-img-wrap">
+                        <div class="card-img">
+                            <img src="images/main-card.png" alt="카드">
+                        </div>
+                        <div class="card-img">
+                            <img src="images/main-card.png" alt="카드">
+                        </div>
+                        <div class="card-img">
+                            <img src="images/main-card.png" alt="카드">
+                        </div>
+                        <div class="card-img">
+                            <img src="images/main-card.png" alt="카드">
+                        </div>
+                    </div>
                 </a>
                 <div href="#" class="card card-3">
                     <div class="card-wrap">
@@ -109,7 +126,7 @@
                                 <span>2020.08.09</span>
                             </li>
                             <li>
-                                <a href="#">착한구매 참여하기</a>
+                                <a href="#">착한구매 참여하기이이이이이이이</a>
                                 <span>2020.08.09</span>
                             </li>
                             <li>
@@ -140,6 +157,18 @@
                     </a>
                 </div>
             </div>
+
+            <!-- 하단 고정 아이콘 -->
+            <div class="fixed--icon">
+                <a href="#" class="go-to-cart">
+                    <img src="images/ico_cart.png" alt="카트아이콘">
+                    <p>구매물품<br>접수</p>
+                </a>
+                <a href="#" class="go-top">
+                    <img src="images/ico_up_arrow.png" alt="위_화살표">
+                    <p>TOP</p>
+                </a>
+            </div>
         </div>
     </section>
     <!-- 섹션 종료 -->
@@ -160,16 +189,7 @@
         </div>
     </footer>
     <!-- 푸터 종료 -->
-    <div class="fixed--icon">
-        <a href="#" class="go-to-cart">
-            <img src="images/ico_cart.png" alt="카트아이콘">
-            <p>구매물품<br>접수</p>
-        </a>
-        <a href="#" class="go-top">
-            <img src="images/ico_up_arrow.png" alt="위_화살표">
-            <p>TOP</p>
-        </a>
-    </div>
+    
 
     <!-- 팝업창 -->
     <div class="main-popup">
@@ -180,19 +200,28 @@
                         <img src="images/ico_close.png" alt="닫기버튼">
                     </a>
                 </div>
-                <div class="pop-conts">
-                    <div class="pop-left-arrow">
-                        <a href="#">
-                            <img src="images/ico_left_arrow.png" alt="왼쪽">
-                        </a>
-                    </div>
-                    <div class="pop-main">
-                        <p>캠페인 팝업 상세 페이지</p>
-                    </div>
-                    <div class="pop-right-arrow">
-                        <a href="#">
-                            <img src="images/ico_right_arrow.png" alt="오른쪽">
-                        </a>
+                <div class="pop-wrap">
+                    <div class="popup-slick">
+                        <div class="pop-conts">
+                            <div class="pop-main">
+                                <p>캠페인 팝업 상세 페이지</p>
+                            </div>
+                        </div>
+                        <div class="pop-conts">
+                            <div class="pop-main">
+                                <p>캠페인 팝업 상세 페이지</p>
+                            </div>
+                        </div>
+                        <div class="pop-conts">
+                            <div class="pop-main">
+                                <p>캠페인 팝업 상세 페이지</p>
+                            </div>
+                        </div>
+                        <div class="pop-conts">
+                            <div class="pop-main">
+                                <p>캠페인 팝업 상세 페이지</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="pop-btn">
@@ -203,6 +232,27 @@
     </div>
 </body>
     <script src="js/jquery.min.js"></script>
+
+    <!-- slick -->
+    <script src="js/jquery-migrate-1.2.1.min.js"></script>
+    <script src="js/slick.min.js"></script>
+
     <script src="js/script.js"></script>
+
+    <script>
+        $('.card-img-wrap').slick({
+            infinite: true,
+            arrows: false,
+            dots: true,
+        });
+      </script>
+    <script>
+        $('.popup-slick').slick({
+            infinite: true,
+            arrows: true
+        })
+    </script>
+
+
 
 </html>

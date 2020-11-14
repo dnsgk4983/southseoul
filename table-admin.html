@@ -76,7 +76,7 @@
     </header>
     <!-- 섹션 -->
     <section>
-        <div class="board-wrap table-wrap">
+        <div class="board-wrap">
             <div class="board-title">
 
                 <div class="board-title-left">
@@ -169,12 +169,7 @@
                                             지난번 주문에 잘못 보내주셨는데 한벌이라 그냥 안했어요.<br>
                                             이번엔 사이즈,디자인 다른 제품 보내지 말아주세요.<br>
                                         </p>
-                                        <p>
-                                            <a href="#" class="inner-click-txt">검색</a>
-                                            <span class="inner-dash-color">|</span>
-                                            <span><a class="inner-click-txt openrq">답변</a></span>
-                                            <span class="inner-dash-color">|</span>
-                                            <span><a class="inner-click-txt open-stat1">상태 관리</a></span></p>
+                                        <p><a href="#" class="inner-click-txt">검색</a><span class="inner-dash-color">|</span><span><a href="#" class="inner-click-txt">답변</a></span><span class="inner-dash-color">|</span><span><a href="#" class="inner-click-txt">상태 관리</a></span></p>
                                     </div>
                                 </div>
                                 <div class="inner-bottom">
@@ -806,7 +801,7 @@
             </div>
             <!-- 하단 고정 아이콘 -->
             <div class="fixed--icon">
-                <a class="go-to-cart">
+                <a href="#" class="go-to-cart">
                     <img src="images/ico_cart.png" alt="카트아이콘">
                     <p>구매물품<br>접수</p>
                 </a>
@@ -840,95 +835,6 @@
     <div class="buy-receive">
         <div class="buy-title">
             <h3>구매 접수</h3>
-        </div>
-        <div class="buy-body">
-            <div class="form-field">
-                <div class="buy-sortation">
-                    <p>구분</p>
-                    <div class="check-wrap">
-                        <form action="">
-                            <div class="check-item">
-                                <input type="radio" name="sor">
-                                <label for=""></label>
-                                <span>일반</span>
-                            </div>
-                            <div class="check-item">
-                                <input type="radio" name="sor">
-                                <label for=""></label>
-                                <span>중요</span>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-                <div class="buy-title-wrap">
-                    <p>제목</p>
-                    <div class="buy-title-input">
-                        <input type="text">
-                    </div>
-                </div>
-                <div class="buy-text">
-                    <p>내용</p>
-                    <div class="but-textarea">
-                        <textarea name="" id=""></textarea>
-                    </div>
-                </div>
-                <div class="buy-attach">
-                    <p>파일첨부</p>
-                    <div class="attach-items">
-                        <div class="buy-attach-wrap">
-                            <input class="upload-name" disabled="disabled">
-                            <label for="ex_filename">찾기</label>
-                            <input type="file" id="ex_filename" class="upload-hidden">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="buy-bottom">
-                <p>* 빠른 답변을 원하시면 내선번호 0241-332에 문의하세요.</p>
-                <div class="buy-btn-wrap">
-                    <a class="buy-btn check">확인</a>
-                    <a class="buy-btn cancle">취소</a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- 구매접수 팝업 끝 -->
-
-    <!-- 상태관리 팝업 -->
-    <div class="stat-pop">
-        <div class="stat-title">
-            <h3>상태관리</h3>
-        </div>
-        <div class="stat-body">
-            <form action="">
-                <div class="stat-item">
-                    <input type="radio" name="stat">
-                    <label for=""></label>
-                    <span>미확인</span>
-                </div>
-                <div class="stat-item">
-                    <input type="radio" name="stat">
-                    <label for=""></label>
-                    <span>처리 중</span>
-                </div>
-                <div class="stat-item">
-                    <input type="radio" name="stat">
-                    <label for=""></label>
-                    <span>완료</span>
-                </div>
-            </form>
-            <div class="stat-btn">
-                <a class="check">확인</a>
-                <a class="close">취소</a>
-            </div>
-        </div>
-    </div>
-    <!-- 상태관리 팝업 끝 -->
-
-    <!-- 답변 팝업 -->
-    <div class="buy-receive request">
-        <div class="buy-title">
-            <h3>답변</h3>
         </div>
         <div class="buy-body">
             <div class="form-field">
@@ -999,7 +905,6 @@
             </div>
         </div>
     </div>
-    <!-- 답변 팝업 끝 -->
 </body>
     <script src="js/jquery.min.js"></script>
     <script src="js/script.js"></script>
